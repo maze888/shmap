@@ -7,7 +7,7 @@ size_t shmap_version      = 0x10000000;
 void shmap_set_last_error(const char *func, char *fmt, ...)
 {
 	va_list ap;
-	char buf[1024] = {0};
+	char buf[512] = {0};
 
 	memset(shmap_last_error, 0x00, sizeof(shmap_last_error));
 
